@@ -1,0 +1,24 @@
+#in2{
+    display: none;
+}
+
+#in2:checked+label{
+    color: red;
+}
+
+#colorRed:checked~.sky{
+    background-color: red;
+}
+
+#colorGreen:checked~.sky{
+    background-color: green;
+}
+#colorBlue:checked~.sky{
+    background-color: blue;
+}
+
+
+.sky{
+    height: calc(100vh - 40px);
+    background-color: grey;
+}

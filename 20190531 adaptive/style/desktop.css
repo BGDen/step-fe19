@@ -1,0 +1,16 @@
+
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+article{
+    display: inline-block;
+    background-color: rgba(0, 255, 255, 0.226);
+    padding: 15px;
+    border: 2px solid grey;
+    margin: 20px;
+}

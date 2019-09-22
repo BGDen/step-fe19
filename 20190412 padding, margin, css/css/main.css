@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+.test{
+    height: 18px;
+    width: 100px;
+    border: 1px solid black;
+    padding: 5px 3px 10px;
+}
+
+span::selection{
+    color: white;
+    background-color: black;
+} 
+/*
+span{
+    display: inline-block;
+} */
+
+li::first-letter,
+span::first-letter{
+    color: red;
+    font-size: 150%;
+    font-weight: 800;
+}
+
+li::first-line,
+span::first-line{
+    text-decoration: overline;
+    text-decoration-color: red;
+}

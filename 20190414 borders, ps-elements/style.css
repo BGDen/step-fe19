@@ -1,0 +1,80 @@
+section{
+    width: 300px;
+    height: 200px;
+    border: 2px dotted black;
+    display: inline-block;
+    background-color: lightgrey;
+    margin: 10px;
+}
+
+section div{
+    width: 0px;
+    height: 0px;
+    margin: 75px auto;
+    background-color: transparent;
+}
+
+.el1{
+    border-top: 50px solid aqua;
+    border-left: 50px solid transparent;
+}
+
+.leTo2{
+    border-top: 50px solid transparent;
+    border-left: 50px solid aqua;
+}
+
+.riTo{
+    border-top: 50px solid red;
+    border-right: 50px solid transparent; 
+}
+
+.riTo2{
+    border-top: 50px solid transparent;
+    border-right: 50px solid red; 
+}
+
+.boRi{
+    border-bottom: 50px solid transparent;
+    border-right: 50px solid blue;
+}
+
+.boRi2{
+    border-bottom: 50px solid blue;
+    border-right: 50px solid transparent;
+}
+
+.boLe{
+    
+    border-bottom: 50px solid transparent;
+    border-left: 50px solid yellow;
+}
+.boLe2{
+    border-bottom: 50px solid yellow;
+    border-left: 50px solid transparent;
+
+}
+
+.leToRi{
+    border-top: 50px solid black;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+}
+
+.toRiBo{
+    border-right: 50px solid orange;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+}
+
+.leBoRi{
+    border-bottom: 50px solid green;
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+}
+
+.boLeTo{
+    border-left: 50px solid purple;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+}

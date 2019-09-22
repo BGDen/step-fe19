@@ -1,0 +1,7 @@
+header div{
+    height: 100px;
+}
+
+section *{
+    height: calc(100vh - 100px);
+}

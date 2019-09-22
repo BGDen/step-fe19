@@ -1,0 +1,76 @@
+@keyframes toCircle{        /*at-rules */
+    from{
+        border-radius: 0;
+        background-color: blue;
+    }
+    to{
+        border-radius: 50%;
+        background-color: red;
+    }
+}
+
+
+@keyframes pushMe{
+    0%{
+        margin-left: 0;
+        border-radius: 0;
+        background-color: blue;
+    }
+
+    50%{
+        border-radius: 50%;
+        background-color: red;
+    }
+
+    100%{
+        margin-left: 500px;
+        border-radius: 0;
+        background-color: blue;
+    }
+}
+
+/*Расширение*/
+@keyframes widthUp{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+
+    100%{
+        width: 100px;
+    }
+}
+
+
+.square{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+
+    animation: toCircle 10s infinite alternate;
+    
+    /* animation: toCircle 1s infinite; */
+    /* animation: pushMe 10s 4s infinite; */
+}
+
+.square:hover,.el1:hover,.el2:hover{
+    animation-play-state: paused;
+}
+
+
+.el1,.el2{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+.el1{
+    animation:  widthUp 5s infinite;
+}
+
+.el2{
+    animation:  widthUp 5s 2.5s infinite;
+}
+

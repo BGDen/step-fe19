@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+}
+/*
+1% - 1% от высоты/ширины родителя
+1vw - 1% от ширины экрана
+1vh - 1% от высота экрана
+*/
+
+aside,main,article{
+    float: left;
+}
+
+aside{
+    background-color: brown;
+    width: 10%;
+    min-width: 150px;
+    height: 100%;
+}
+
+main{
+    width: 80%;
+    min-width: 375px;
+    height: 100%;
+    background-color: chocolate;
+}
+
+article{
+    width: 200px;
+    margin: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.app1{
+    color: violet;
+    font-size: 28pt;
+}
+
+.hash1{
+    width: 10px;
+    color: red;
+}

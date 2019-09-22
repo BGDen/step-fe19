@@ -1,0 +1,48 @@
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.el{
+    border: 1px solid grey;
+    /* height: 50px; */
+    background-color: rgba(44, 129, 168, 0.466);
+}
+
+.header{
+    grid-area: header;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.r-side{
+    grid-area: r-side;
+}
+
+.l-side{
+    grid-area: l-side;
+}
+
+.up-content{
+    grid-area: up-content;
+}
+
+.down-content{
+    grid-area: down-content;
+}
+
+.main{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 4fr 4fr 0.5fr;
+    grid-template-areas: 
+    "header header header"
+    "l-side up-content r-side"
+    "l-side down-content r-side"
+    "footer footer footer";
+    grid-column-gap: 10px;
+}

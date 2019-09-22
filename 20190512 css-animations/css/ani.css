@@ -1,0 +1,93 @@
+@keyframes walkers{
+    0%{
+        left: 0;
+        top: 0;
+        border-radius: 50% 50% 0 50%;
+        background-color: red;
+    }
+
+    25%{
+        left: 150px;
+        top: 0;
+        border-radius: 50% 50% 50% 0;
+        background-color: orange;
+    }
+
+    50%{
+        left: 150px;
+        top: 150px;
+        border-radius: 0 50% 50% 50%;
+        background-color: yellow;
+    }
+
+    75%{
+        left: 0;
+        top: 150px;
+        border-radius: 50% 0 50% 50%;
+        background-color: green;
+    }
+
+    100%{
+        left: 0;
+        top: 0;
+        border-radius: 50% 50% 0 50%;
+        background-color: red;
+    }
+}
+
+
+@keyframes changeColor{
+    0%{
+        background-color: blue;
+        border-radius: 25%;
+    }
+
+    50%{
+        border-radius: 50%;
+    }
+
+    100%{
+        background-color: orange;
+    }
+}
+
+
+.blo{
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: grey;
+    border-radius: 50%;
+
+    animation: walkers 8s infinite;
+}
+
+.blo:hover{
+    animation-play-state: paused;
+}
+
+.el2{
+    animation-delay: 2s;
+}
+
+.el3{
+    animation-delay: 4s;
+}
+
+.el4{
+    animation-delay: 6s;
+}
+
+
+.circle{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    /* background-color: red; */
+    margin-top: 500px;
+
+    animation: changeColor 5s both;
+}

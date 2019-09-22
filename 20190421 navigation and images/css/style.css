@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 30px;
+    font-family: Arial;
+    font-size: 18pt;
+    background-color: antiquewhite;
+    text-align: justify;
+    background-image: url('https://previews.123rf.com/images/yod67/yod671705/yod67170500252/77774552-vecteur-d-un-visage-de-z%C3%A8bre-sur-fond-blanc-animaux-sauvages-.jpg');
+    background-repeat: repeat-y;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+.up{
+    width: 50px;
+    height: 50px;
+    border: 4px inset grey;
+    background-color: rgba(22,154,44,0.5);
+    background-repeat: no-repeat;
+    background-image: url('../img/tilemap_packed.png');
+    background-position: -140px -105px;
+    text-align: center;
+    line-height: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-size: 470px;
+}
+.up a{
+    text-decoration: none;    
+    font-weight: 800;
+    color: white;
+}
+
+img{
+    float: left;
+    margin: 10px;
+}

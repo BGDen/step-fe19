@@ -1,0 +1,137 @@
+body{
+    padding: 0;
+    margin: 0;
+    /* direction: rtl; */
+}
+
+.container{
+    height: 550px;
+    background-color: lightblue;
+
+    display: flex;
+    /*flex-container    flex-родитель*/
+
+    /*Выравнивание по главной оси (по горизонтали)*/
+    justify-content: center; 
+    /*
+    flex-start - начало оси - by default
+    flex-end - конец оси
+    center - центр оси
+    space-between - с пространством между элементами
+    space-around - с пространством вокруг элементов
+    */
+
+    /*Выравнивание по побочной оси (по вертикали)*/
+    align-items: center;
+    /*
+    flex-start - начало оси 
+    flex-end - конец оси
+    center - центр оси
+    baseline - по базовой линии(линия текста)
+    stretch - растягивает элементы по всей высоте by default!
+    */
+
+    /*Переход в многострочность*/
+    flex-wrap: nowrap;
+    /*
+    nowrap - однострочный. Подбирает ширину под ширину родителя
+    wrap - многострочность. Позволяет переносить элементы
+    wrap-reverse - обратная многострочность
+    */
+
+    /*Выравнивание многострочных элементов по побочной оси*/
+    align-content: center;
+    /*
+    flex-start - по началу оси
+    center - по центру
+    flex-end - по концу оси
+    space-between - пространство между элементами
+    space-around - пространство вокруг элементов
+    stretch - растягивание с заполнением свободного пространства by default!
+    */
+
+    /*Смена направления осей*/
+    flex-direction: row;
+    /*
+    row - default - слева направо
+    row-reverse - слева направо
+    column - колоночное отображение
+    column-reverse - колоночное отображение
+    */
+
+    /*
+    flex-flow - direction and wrap
+    */
+
+
+}
+
+.el{
+    border: 1px solid grey;
+    width: 83px;
+    height: 33px;
+    text-align: center;
+    line-height: 33px;
+    background-color: white;
+    /*flex-элемент    flex-item*/
+
+    /*Порядок элемента в ряду с другими*/
+    order: 0;
+    /*
+    0 - by default
+    */
+
+    /*Способность вырастать при необходимости*/
+    /* flex-grow: 1; */
+    /*
+     0 - default
+    */
+
+    /*Способность сжиматься при необходимости*/
+    flex-shrink: 1;
+    /*
+    0 - не сжимайся
+    1 - default
+    */
+}
+
+.h2{
+    height: 66px;
+    font-size: 30%;
+    /* order: -1; */
+    /* flex-grow: 2; */
+    flex-shrink: 0;
+
+    /*Выравнивание себя любимого по побочной оси(по вертикали по умолчанию)*/
+    align-self: flex-start;
+    /*
+    flex-start - начало оси 
+    flex-end - конец оси
+    center - центр оси
+    baseline - по базовой линии(линия текста)
+    stretch - растягивает элементы по всей высоте by default!
+    */
+
+}
+
+.h3{
+    /* height: 99px; */
+    font-size: 190%;
+    /* order: 2; */
+    /* flex-grow: 3; */
+    /* flex-shrink: 3; */
+    
+    /*Базовая ширина*/
+    flex-basis: 200px;
+    /*
+    число
+    auto - default
+    */
+}
+
+/*
+1. таблица
+2. обтекание - float
+3. inline-block
+4. flexbox
+*/

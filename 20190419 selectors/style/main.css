@@ -1,0 +1,94 @@
+.w800{/*10*/
+    font-weight: 800;
+}
+
+.w700{
+    font-weight: 700;
+}
+
+ol{
+    color: red;
+}
+
+body{
+    color: green;
+    font-size: 300%;
+}
+
+li{
+    color: pink;
+    font-weight: 800;
+}
+
+/*Наследование стилей*/
+
+li{/*1*/
+    color: darkblue;
+    font-weight: 400;
+    text-align: right;
+}
+
+#dec{/*100*/
+    text-decoration: underline;
+}
+
+#dd{/*100*/
+    text-align: center;
+}
+
+ol#dd li{/*102*/
+    text-align: center;
+}
+
+/*Вложеность. Потомки*/
+
+body li{/*2*/
+    /*li в body*/
+    text-decoration: underline;
+}
+
+ol li{/*2*/
+    /*Пробел - просто потомки*/
+    text-decoration: line-through;
+}
+
+/*Вложеность прямые потомки*/
+
+body>div{/*2*/
+    font-weight: 800;
+}
+
+body div{/*2*/
+    font-weight: 400;
+}
+
+/*Уточнение*/
+li.red{/*11*/
+    color: red;
+}
+/* 
+ol#dd{
+
+} 
+*/
+
+/*
+тег.класс
+*/
+
+/*
+.класс.класс
+*/
+.red.w700{/*20*/
+    background-color: yellow;
+}
+
+ol .red{
+    border: 1px solid black;
+}
+
+
+/*БЭМ*/
+
+
+

@@ -1,0 +1,12 @@
+@import url('reset.css');
+@import url('grid.css');
+@import url('grid-xs.css');
+@import url('grid-sm.css');
+@import url('grid-lg.css');
+
+
+/*Для отображения и учебного процесса*/
+/*TODO: Удалить после разработки*/
+[class*="col-"]{
+    border: 1px solid grey;
+}
