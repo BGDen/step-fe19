@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .circle{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            border-radius: 50%;
+            background-color: white;
+            left: calc(50vw - 50px);
+            top: calc(50vh - 50px);
+        }
+
+        body{
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(to right, black 50%, white 50%);
+        }
+
+        .black{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <script>
+        const circle = {
+            isMove : false,
+            link : document.querySelector('.circle'),
+        }
+        //При клике на круге мы включаем флаг "Двигать"
+        function circleClick(){
+            circle.isMove = true;
+        }        
+
+        //При поднятии ЛКМ мы выключаем флаг "Двигать"
+        function mouseUp(){
+            circle.isMove = false;
+        }        
+
+        //При движении мышки на экране, перемещаем круг под мышкой
+        function moveCircle(ev){
+            if(circle.isMove){
+                const halfScreen = document.body.offsetWidth / 2;
+                circle.link.style.left =  ev.clientX - 50 + 'px';
+                circle.link.style.top =  ev.clientY - 50 + 'px';
+                if(ev.clientX > halfScreen){
+                    circle.link.classList.add('black');
+                }else{
+                    circle.link.classList.remove('black');
+                }
+            }            
+        }
+
+        //самовызываемая фунукция
+        (function(){
+            document.body.addEventListener('mousemove', moveCircle);
+            document.body.addEventListener('mouseup', mouseUp);
+            circle.link.addEventListener('mousedown', circleClick);
+        })();
+    </script>
+</body>
+</html>
