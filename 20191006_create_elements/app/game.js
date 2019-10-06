@@ -37,7 +37,7 @@ class Ball{
         //шарик добавляется родительскому элементу
         parent.appendChild(this.ball);
         //создать интервал в 0.5 секунды и повесить обработчик метод "шаг"
-        this.interval = setInterval(()=> this.step(), 500);
+        this.interval = setInterval(()=> this.goStep(), 500);
     }
 
     random(min = 1, max = 100){
@@ -45,9 +45,10 @@ class Ball{
     }
 
     //Метод "шаг"
-    step(){
+    goStep(){
+        this.top += this.step;
         //шарик двигается на расстояние "ШАГ"
-
+        this.ball.style.top = this.top + 'px';
         //проверяем, достигли ли мы границы экрана
 
             //если достигли, то запускаем метод "ПРОВТЫКАЛ"
