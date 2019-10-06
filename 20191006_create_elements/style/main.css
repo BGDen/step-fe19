@@ -1,0 +1,13 @@
+div{
+    background-color: black;
+    color: white;
+}
+
+p{
+    background-color: aquamarine;
+}
+
+span{
+    font-style: italic;
+    text-decoration: underline;
+}
