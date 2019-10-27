@@ -1,6 +1,6 @@
 .info{
     font-family: monospace;
-    white-space: pre;
+    /* white-space: pre; */
 }
 
 .inline-block{
