@@ -1,0 +1,34 @@
+.park{
+    border: 3px solid grey;
+    margin: 15px;
+    width: 300px;
+    height: 300px;
+}
+
+.park.big{
+    width: 100%;
+    height: 600px;
+}
+
+.luxury{
+    background-color: darkgoldenrod;
+}
+
+.parks{
+    display: flex;
+}
+
+.autos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.auto{
+    border: 1px solid red;
+    width: 200px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('https://konvektor.net/wp-content/uploads/2018/08/auto-1987642_1280.png');
+}
