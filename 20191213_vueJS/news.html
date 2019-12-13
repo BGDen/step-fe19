@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div class="vue">
+        <div class="uk-margin">
+            <input class="uk-input" type="text" placeholder="Input" v-model="inpData">
+            <button class="uk-button uk-button-default" @click="getNews">Get News</button>
+        </div>
+        <div class="uk-child-width-1-2@m" uk-grid>
+            <div v-for="nws in newsArr">
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-media-top">
+                        <img :src="nws.urlToImage" alt="">
+                    </div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">{{nws.title}}</h3>
+                        <p>{{nws.description}} <a :href="nws.url" target="_blank">full story</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app/news.js"></script>
+</body>
+</html>
