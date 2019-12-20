@@ -13,8 +13,10 @@
 <body>
     <div class="vue">
         <div class="uk-margin">
-            <input class="uk-input" type="text" placeholder="Input" v-model="inpData">
-            <button class="uk-button uk-button-default" @click="getNews">Get News</button>
+            <input class="uk-input" type="text" 
+                placeholder="Input" v-model="inpData">
+            <button class="uk-button uk-button-default" 
+                @click="getNews">Get News</button>
         </div>
         <div class="uk-child-width-1-2@m" uk-grid>
             <div v-for="nws in newsArr">
@@ -24,7 +26,8 @@
                     </div>
                     <div class="uk-card-body">
                         <h3 class="uk-card-title">{{nws.title}}</h3>
-                        <p>{{nws.description}} <a :href="nws.url" target="_blank">full story</a></p>
+                        <p>{{nws.description}} <a :href="nws.url" 
+                            target="_blank">full story</a></p>
                     </div>
                 </div>
             </div>
