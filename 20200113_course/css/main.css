@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.puzzle{
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    background-image: url(https://icatcare.org/app/uploads/2018/09/Scottish-fold.png);
+}
+.id1{
+    background-position: 0 0;
+}
+
+.id2{
+    background-position: 50px 100px;
+}
+
+.id3{
+    background-position: 100px 0;
+}
+
+.id4{
+    background-position: 150px 0;
+}
+
+.td{
+    width: 50px;
+    height: 50px;
+    border: 1px solid grey;
+    display: inline-block;
+}
+
+.table{
+    width: 600px;
+}
