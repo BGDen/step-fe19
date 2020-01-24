@@ -1,0 +1,6 @@
+.info p:first-child{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    font: 16px monospace;
+}
