@@ -27,6 +27,7 @@ class App extends React.Component {
            }
         });
         console.log(data);
+        console.log(JSON.stringify(data));
         this.setState({data});
      });
   }
