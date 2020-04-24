@@ -18,7 +18,7 @@ btnChangeColor.addEventListener('click' , _ => {
             tabs[0].id,
             {
                 code : `document.body.style.backgroundColor = "${color}";
-                document.body.style.cursor = "url('https://so2niko.github.io/step-fe19/20200422_chrome_extensions/img/arrow.cur'), auto";`
+                document.body.style.cursor = "url('https://cdn.custom-cursor.com/db/4398/arrow2535.png'), auto";`
             }
         );
     });

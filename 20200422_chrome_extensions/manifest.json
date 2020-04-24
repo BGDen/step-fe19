@@ -1,6 +1,6 @@
 {
     "name" : "Basic Chrome guide",
-    "version" : "0.9.4",
+    "version" : "0.9.7",
     "desription" : "Build test exstension from google guide",
     "background" : {
         "scripts" : ["js/background.js"],
