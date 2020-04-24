@@ -17,7 +17,8 @@ btnChangeColor.addEventListener('click' , _ => {
         chrome.tabs.executeScript(
             tabs[0].id,
             {
-                code : `document.body.style.backgroundColor = "${color}";`
+                code : `document.body.style.backgroundColor = "${color}";
+                document.body.style.cursor = "url('http://www.rw-designer.com/cursor-extern.php?id=135913'), auto";`
             }
         );
     });
