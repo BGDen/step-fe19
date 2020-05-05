@@ -10,9 +10,9 @@ export class Footer extends Component{
 
         this.store.subscribe(this.handleInputCount);
     }
-    handleInputCount = (...data) =>{
-        console.log(data);
-        // this.setState({count : data.count});
+    handleInputCount =_=>{
+        const {count} = this.store.getState();
+        this.setState({count});
     }
     render = _ =>{
         return <div>

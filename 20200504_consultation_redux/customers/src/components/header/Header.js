@@ -1,5 +1,6 @@
-import React, { Component } from "react";
+import React, { Component, useContext } from "react";
 import {customersCount} from '../../helpers/redux/actions';
+import { ReactReduxContext } from 'react-redux';
 
 export class Header extends Component{
     constructor(props){

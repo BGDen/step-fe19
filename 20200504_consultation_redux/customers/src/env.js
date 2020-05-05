@@ -1,3 +1,5 @@
 export const API = {
-    CUSTOMERS : 'https://randomuser.me/api/?results=10'
+    CUSTOMERS : 'https://randomuser.me/api/?results='
 };
+
+
